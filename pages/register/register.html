@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register_style.css" />
+    <title>Register Page</title>
+  </head>
+
+  <body>
+    <div class="register_container">
+      <div class="back_link">
+        <a href="../home/Home.html" class="back_link__text"> < Back</a>
+      </div>
+      <div class="register__subcontainer">
+        <form class="register_form">
+          <div class="register_heading">
+            <h1 class="register_heading_text">Register</h1>
+          </div>
+          <div class="name_box">
+            <div class="fullname">
+              <label for="fullname" class="fullname_text" >Full Name</label>
+              <input
+                type="text"
+                name="fullname"
+                class="fullname_input"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="email">
+              <label for="email" class="email_text">Email</label>
+              <input type="email" name="email" class="email_input" placeholder="Email" required/>
+            </div>
+          </div>
+          <div class="username_box">
+            <div class="username">
+              <label for="username" class="username_text">Username</label>
+              <input type="text" name="username" class="username_input" placeholder="Username" required/>
+            </div>
+            <div class="mobile">
+              <label for="mobile" class="mobile_text">Mobile</label>
+              <input type="number" name="mobile" class="mobile_input"  placeholder="Mobile Number" required/>
+            </div>
+          </div>
+          <div class="password_box">
+            <label for="password" class="password_text">Password</label>
+            <input type="password" name="password" class="password_input" placeholder="Password" required/>
+          </div>
+          <div class="address_box">
+            <label for="address" class="address_text">Address</label>
+            <textarea
+              name="address"
+              cols="20"
+              rows="2"
+              class="address_input"
+              placeholder="Address"
+              required
+            ></textarea>
+          </div>
+          <div class="cityState_box">
+            <div class="city">
+              <label for="city" class="city_text">City</label>
+              <input type="text" name="city" class="city_input" placeholder="City" required />
+            </div>
+            <div class="state">
+              <label for="state" class="state_text">State</label>
+              <input type="text" name="state" class="state_input" placeholder="State" required />
+            </div>
+          </div>
+
+          <div class="submit_button_box">
+            <input type="submit" value="Register" class="submit_button" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

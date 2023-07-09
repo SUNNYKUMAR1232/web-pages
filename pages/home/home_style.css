@@ -1,0 +1,196 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+body{
+            background-color: #f3f5f9;
+            font-family: 'Roboto', sans-serif;
+}
+.container{
+            width: 100%;
+            height: 100vh;
+         
+}
+.nav_container{
+            width: 100%;
+            height: 60px;
+            background-color: #BFE5EB;
+           box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.32);
+            position: fixed;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+}
+.menu_section{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+}
+.menu_icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+}
+.menu_icon span{
+            width: 100%;
+            height: 3px;
+            background-color: #0b0000;
+            border-radius:2em ;
+            display: block;
+            margin: 6px 0;
+            transition: all 0.3s ease;
+}
+.menu_icon:hover span {
+            background-color: #31b7d5;
+}
+.menu_icon.active span:nth-child(1){
+            transform: translateY(12px) rotate(135deg);
+}
+.menu_icon.active span:nth-child(2){
+            opacity: 0;
+}
+.menu_icon.active span:nth-child(3){
+            transform: translateY(-6px) rotate(-135deg);
+}
+
+.brand_icon ,.brand_text{
+            color: #000000;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+}
+.nav_link__box{
+            width: 100%;
+            height: 1vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+}
+.nav_link__box ul{
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            list-style: none;
+            justify-content: flex-end;
+            text-decoration: none;
+}
+.nav_link__box ul li a{
+            color: #000000;
+            font-size: 1.2em;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+}
+.nav_link__box ul li a:hover{
+            color: #31b7d5;
+}
+.nav_link__box ul li a.active{
+            color: #01cefc;
+}
+.main_container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 50px;
+}
+.filter{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 50px;
+
+}
+.filter input{
+            width: 50%;
+            height: 50px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            padding: 0 20px;
+            font-size: 1.2em;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.12);
+}
+.filter input:focus{
+            box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.32);
+}
+.filter input::placeholder{
+            color: #000000;
+            font-size: 1.2em;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+}
+
+
+.total_condidate,.selected_condidate{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding: 1em;
+
+            background-color: #b2cafb;
+}
+.title{
+            color: #000000;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+}
+table{
+            width: 100%;
+}
+
+thead{
+            width: 100%;
+            background-color: #70d6ff;
+            padding: 1em;
+          
+}
+tr{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+           
+}
+th{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            vertical-align: top;
+            padding: 1em;
+}
+td{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+           padding: .75em;
+           vertical-align: top;
+            text-align: center;
+            padding: 0 50px;
+}
+

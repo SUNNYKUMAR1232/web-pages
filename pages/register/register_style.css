@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register_container {
+  width: 100%;
+  height: 100vh;
+  background: #dee2e6;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__subcontainer {
+  height: 38em;
+  width: 38em;
+  background: #dee2e6;
+  box-shadow: 0px 0px 50px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 42px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register_form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.register_heading__text {
+  font-size: 1.2em;
+  color: #495057;
+}
+
+.back_link {
+  position: absolute;
+  top: 4em;
+  left: 3em;
+}
+
+.back_link__text {
+  font-size: 1.4em;
+  color: #495057;
+  text-decoration: none;
+}
+
+.back_link__text:hover {
+  color: #316eab;
+}
+
+.name_box,
+.username_box,
+.cityState_box {
+  width: 80%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullname,
+.email {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.fullname_text,
+.email_text,
+.mobile_text,
+.username_text,
+.password_text,
+.state_text,
+.city_text,
+.address_text,
+.submit_button {
+  font-size: 1.3em;
+  color: #495057;
+}
+
+.fullname_input,
+.email_input,
+.password_input,
+.mobile_input,
+.username_input,
+.state_input,
+.city_input,
+.address_input {
+  width: 90%;
+  height: 2em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 1em;
+  font-size: 1.2em;
+  border-bottom:2px solid #000000;
+}
+
+.cityState_box {
+  gap: 1em;
+}
+
+.address_box,
+.password_box {
+  width: 80%;
+  height: 4em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.submit_button {
+  width: 20em;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  background: #495057;
+  color: #e9ecef;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background: rgb(52, 58, 64);
+  border-radius: 54px;
+  box-shadow: 0px 0px 0px 10px rgba(52, 58, 64, 0.18);
+  transition: all 0.3s ease 0s;
+}
